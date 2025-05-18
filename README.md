@@ -2,7 +2,7 @@
 My final project is a mini-game called 24-point calculation.
 
 To run this program, please put all files into a folder and run the 'main.py' file.
-There will creat a file called 'high_score.txt' to record the highest history score.
+It will automatically creat a file called 'high_score.txt' to record the highest history score.
 
 This project is a mini-game called '24-Point Calculation', which stimulates an easy poker card game.
 The purpose is to use 4 given numbers (1-10 inclusive) and apply basic arithmetic operations(+,-,*,/ with optional parentheses) 
