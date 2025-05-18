@@ -149,12 +149,13 @@ mindlessly spamming 'T'.  :)"
             if user_input == 't' and found or \
             user_input == 'f' and not found:
                 self.current_score += 10
-                print("Right! (+10) \n")
+                print("Right! (+10)")
+                print(f"One of solution is {self.solution}")
                 
             elif user_input == 't' and not found:
                 penalty_count_down -=1
                 time_consumption += cards_show_time - answer_time
-                self.current_score -= 10
+                self.current_score -= 15
                 print('Wrong! (-15) \n')
                 if penalty_count_down<=0 and time_consumption < 0.5:
                     print(message)
@@ -164,8 +165,8 @@ mindlessly spamming 'T'.  :)"
                     time_consumption = 0
                 
             elif user_input == 'f' and found:
-                self.current_score -= 10
-                print('Wrong! (-10)')
+                self.current_score -= 15
+                print('Wrong! (-15)')
                 print(f"One of solution is {self.solution}")
             else:
                 print("Invalid input! Please enter T or F!")
