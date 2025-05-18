@@ -122,7 +122,7 @@ class Game24:
         '''speed challenge mod!'''
         print("=== Speed Challenge Mode!(60 seconds) ===")
         start = time.time()
-        penalty_count_down = 1
+        penalty_count_down = 2
         time_consumption = 0
         
         while time.time() - start < self.time_limit:
@@ -160,7 +160,7 @@ mindlessly spamming 'T'.  :)"
                     print(message)
                     time.sleep(15)
                     self.current_score -= 100
-                    penalty_count_down = 1
+                    penalty_count_down = 2
                     time_consumption = 0
                 
             elif user_input == 'f' and found:
